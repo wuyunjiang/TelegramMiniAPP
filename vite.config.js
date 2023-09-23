@@ -8,11 +8,5 @@ export default defineConfig({
     open: false,
     http: true,
     ssr: false,
-    proxy: {
-      '/market': {
-        target: 'https://www.koalaotc.com',
-        changeOrigin: true,
-      },
-    },
   },
 })

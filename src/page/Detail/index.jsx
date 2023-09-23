@@ -58,7 +58,13 @@ function Detail() {
     stage.on("touchstart", () => {
       stick.stretch()
     })
+    stage.on("mousedown", () => {
+      stick.stretch()
+    })
     stage.on("touchend", () => {
+      stick.stopStretch(handleRes)
+    })
+    stage.on("mouseup", () => {
       stick.stopStretch(handleRes)
     })
   }

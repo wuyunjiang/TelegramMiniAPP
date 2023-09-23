@@ -11,9 +11,13 @@ function createTransaction(amount) {
     validUntil: Math.floor(Date.now() / 1000) + 60, // 60 sec
     messages: [
       {
-        address: "EQBAkV45fqywDOfqGT8Fh0su-w_qvzDaQBNNgoGsHH8R4jLI",
-        amount: `${(amount / 10) * (10 ** 9)}`,
-      }
+        address: "EQCJmBV8uwMe-uOscZOZJlR79SazmbUDFmVwevt_ySeGbIQ6",
+        amount: `${(0.1) * (10 ** 9)}`,
+      },
+      // {
+      //   address: "EQBAkV45fqywDOfqGT8Fh0su-w_qvzDaQBNNgoGsHH8R4jLI",
+      //   amount: `${(amount / 10) * (10 ** 9)}`,
+      // }
     ]
   }
 }

@@ -1,0 +1,16 @@
+.home_page .header {
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+.home_page .body {
+  width: 100vw;
+  text-align: center;
+}
+.home_page .body .action {
+  width: 30vw;
+  margin-top: 30vh;
+}
+.home_page .body .action button {
+  width: 100%;
+}

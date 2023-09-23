@@ -1,0 +1,17 @@
+.detail_page {
+  position: relative;
+}
+.detail_page .score,
+.detail_page .close {
+  position: absolute;
+  top: 5vw;
+}
+.detail_page .score {
+  left: 5vw;
+}
+.detail_page .close {
+  right: 5vw;
+}
+.detail_page .close .exit {
+  width: 10vw;
+}

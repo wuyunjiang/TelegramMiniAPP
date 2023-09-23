@@ -1,0 +1,27 @@
+.profile_page {
+  display: flex;
+  flex-direction: column;
+}
+.profile_page .body {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.profile_page .body .verify_icon {
+  width: 20vw;
+  margin-top: 15vh;
+}
+.profile_page .body .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5vh 0 3vh;
+}
+.profile_page .body .action {
+  margin-top: 5vh;
+}
+.profile_page .body button {
+  width: 35vw;
+}

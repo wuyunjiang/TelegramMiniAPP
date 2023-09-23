@@ -29,39 +29,6 @@ export function randomCreatePillars(n) {
   }))
 }
 
-export const getCountdown = (endTime) => {
-  const diff = endTime.diff(dayjs()) // 时间差
-  const diffHours = dayjs.duration(diff).hours()
-  const diffMinutes = dayjs.duration(diff).minutes()
-  const diffSeconds = dayjs.duration(diff).seconds()
-  // 格式化为需要的格式 这里是时分秒
-  let hoursStr = ''
-  let minutesStr = ''
-  let secondsStr = ''
-  if (diffHours !== 0) {
-    hoursStr = diffHours < 10 ? `0${diffHours}` : diffHours
-    hoursStr = `${hoursStr}:`
-  }
-  if (diffMinutes !== 0) {
-    minutesStr = diffMinutes < 10 ? `0${diffMinutes}` : diffMinutes
-    minutesStr = `${minutesStr}:`
-  }
-  secondsStr = diffSeconds < 10 ? `0${diffSeconds}` : diffSeconds
-  if (!diffHours && !diffMinutes && diffSeconds <= 0) return ''
-  if (diffHours < 0 || diffMinutes < 0 || diffSeconds < 0) return ''
-  return `${hoursStr}${minutesStr}${secondsStr}`
-}
-
-// 对服务端给的错误消息，二次处理
-export function handleMsg(str) {
-  if (str.includes('注册成功')) return '注册成功，3秒后将自动跳转到登录页'
-  if (str.includes('已登录'))
-    return '已存在已登录账号，3秒后将自动为你跳转到首页'
-  if (str.includes('创建成功'))
-    return '商品创建成功，3秒后将自动为你跳转商品详情页'
-  return str
-}
-
 export function copyTxt(str) {
   navigator.clipboard.writeText(str)
   Toast.show({ content: '已复制' })

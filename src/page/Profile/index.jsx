@@ -10,11 +10,11 @@ function Profile() {
   const back = () => navigate("/");
 
   const buyAmount = () => {
-    Toast.show({ content: "已复制, 请在对应App中联系客服" })
+    Toast.show({ content: "开发中..." })
   }
 
   const sellAmount = () => {
-    Toast.show({ content: "已复制, 请在对应App中联系客服" })
+    Toast.show({ content: "开发中..." })
   }
 
 

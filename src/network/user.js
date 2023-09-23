@@ -1,5 +1,3 @@
-import { sleep, handleMsg } from '../tool/index'
-import { Toast } from 'antd-mobile'
 import axios from 'axios'
 import API from './api'
 

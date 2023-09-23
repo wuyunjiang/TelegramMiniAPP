@@ -22,7 +22,7 @@ function App() {
       navigate("/")
     }
   }, []);
-  if (!tonAddress) return <></>
+  if (tonAddress === undefined) return <></>
   return (
     <Context.Provider value={{ userInfo }}>
       <Routes>
